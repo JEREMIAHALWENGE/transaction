@@ -1,25 +1,21 @@
 <script setup>
-import Transactions from './components/Transactions.vue'
+
 </script>
 
 <template>
-  <!-- flexbox wrapper -->
   <main>
-    <Transactions />
+    <router-view />
   </main>
 </template>
+
 
 <style scoped>
 /* ──────────────────────────────
    Center the Transactions card
    ────────────────────────────── */
 main {
-  display: flex;
-  justify-content: center;  /* horizontal centering  */
-  align-items:   center;    /* vertical centering; change to flex-start if you prefer top‑aligned */
-  min-height: 100vh;        /* full‑viewport height makes vertical centering possible */
-  padding: 40px 0;          /* breathing room on small screens */
-  background: #fff;      /* subtle page background (optional) */
+  display: block;
+ 
 }
 
 /* ──────────────────────────────

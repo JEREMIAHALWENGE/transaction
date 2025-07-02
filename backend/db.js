@@ -11,4 +11,4 @@ const connection = mysql.createConnection({
   port:     process.env.MYSQL_PORT || 3306
 });
 
-export const pool = connection.promise();  // ← named export
+export const pool = connection.promise();  
